@@ -1,0 +1,110 @@
+.edit-user {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Enhanced futuristic gradient */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar styling with edit prefix */
+.edit-admin-sidebar {
+    position: fixed; /* Fix sidebar to the left */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px; /* Slightly wider for better layout */
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-right: 1px solid #333;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Subtle shadow for a 3D effect */
+    z-index: 1; /* Ensure sidebar is above other content */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area styling */
+.edit-user-content {
+    margin-left: 260px; /* Leave space for the sidebar */
+    flex: 1; /* Allow content area to fill the remaining space */
+    padding: 2rem; /* Space around content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title styling */
+.edit-user-content h1 {
+    font-size: 3rem; /* Larger, more impactful font size */
+    margin-bottom: 1.5rem;
+    color: #00aaff; /* Bright accent color */
+    text-shadow: 0 0 20px rgba(0, 170, 255, 0.9); /* Stronger glowing effect */
+    letter-spacing: 1px; /* Slight letter spacing for a modern look */
+}
+
+/* Form styling */
+.edit-user-content form {
+    background: rgba(0, 0, 0, 0.85); /* Darker semi-transparent background */
+    border-radius: 15px; /* More rounded corners */
+    padding: 2.5rem; /* Increased padding for spaciousness */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Deep shadow for more depth */
+    width: 100%;
+    max-width: 700px; /* Slightly wider form */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap between elements */
+}
+
+/* Label styling */
+.edit-user-content label {
+    font-size: 1.3rem; /* Larger font size for readability */
+    margin-bottom: 0.75rem;
+    color: #e0e0e0;
+    font-weight: 500; /* Medium weight for emphasis */
+    text-transform: uppercase; /* Modern look */
+}
+
+/* Input styling */
+.edit-user-content input {
+    background: #222; /* Slightly darker background for inputs */
+    border: 1px solid #555; /* Lighter border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    color: #e0e0e0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5); /* Inner shadow effect */
+}
+
+.edit-user-content input:focus {
+    background: #333; /* Slightly lighter on focus */
+    border: 1px solid #00aaff;
+    box-shadow: 0 0 12px rgba(0, 170, 255, 0.5); /* Outer glow effect */
+}
+
+/* Button styling */
+.edit-user-content button {
+    background: linear-gradient(45deg, #00aaff, #0091d3); /* Gradient background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 12px rgba(0, 170, 255, 0.5); /* Glow effect */
+}
+
+.edit-user-content button:hover {
+    background: linear-gradient(45deg, #0091d3, #007bb5); /* Hover gradient */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.7); /* Stronger glow on hover */
+}
+
+.edit-user-content button:active {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(0, 170, 255, 0.5); /* Reset glow on click */
+}
